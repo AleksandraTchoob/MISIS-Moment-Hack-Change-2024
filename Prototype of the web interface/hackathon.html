@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Речное шеринг-такси</title>
+    <link rel="stylesheet" href="hackathon.css">
+    <style>
+        h1, p, label{
+        color: #0077cc;
+        }
+    </style>
+</head>
+<body class="whole-page">
+    <header class="wl-header">
+        <div class="menu-wrap">
+            <button class="menu-button" onclick="toggleDropdown()">☰</button>
+            <div class="dropdown" id="dropdown">
+                <a href="#history">История заказов</a>
+                <a href="#payment">Способы оплаты</a>
+                <a href="#settings">Настройки</a>
+                <a href="#loyality-program">Программа лояльности</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="wl-main">
+        <section id="intro">
+            <h1>Речное шеринг-такси</h1>
+            <p>Укажите ваше местоположение, место назначения и количество пассажиров для заказа речного шеринг-такси.</p>
+        </section>
+
+        <section id="section-form">
+            <form class="ride-form" onsubmit="submitForm(event)">
+                <label for="departure">Ваше местоположение</label>
+                <input type="text" class="input" id="departure" placeholder="Откуда" required>
+
+                <label for="destination">Место назначения</label>
+                <input type="text" class="input"id="destination" placeholder="Куда" required>
+
+                <label for="people">Количество пассажиров</label>
+                <input type="number" class="input" id="people" placeholder="Сколько человек" min="1" required>
+
+                <div class="tariffs">
+                    <button class="tariffs-button" id="with-people" onclick="selectTariff('Вместе')">Вместе</button>
+                    <button class="tariffs-button" id="self" onclick="selectTariff('Одиночная поездка')">Одиночная поездка</button>
+                </div>
+
+                <button type="submit" class="order-button">Заказать речное такси</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Сайт разработан командой MISIS Moment.</p>
+    </footer>
+
+    <script src="hackathon.js"></script>
+</body>
+</html>

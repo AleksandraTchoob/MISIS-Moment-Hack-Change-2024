@@ -1,0 +1,79 @@
+.whole-page {
+    font-family: Georgia, serif, system-ui;
+    background-color: #D8E4F7;
+    margin: 0;
+    padding: 0;
+}
+
+.wl-header {
+    background-color: #9ABCEE;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-wrap {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.menu-button {
+    color: white;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    background-color: #ffffff;
+    display: none;
+    left: 0;
+    top: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.wl-main {
+    padding: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.tariffs {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tariffs-button {
+    background-color: #ffffff;
+    color: #0077cc;
+    font-size: 15px;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-button {
+    background-color: #0077cc;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
